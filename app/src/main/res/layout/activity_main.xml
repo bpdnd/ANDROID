@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/wjk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello"
@@ -14,5 +15,16 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="按钮"
+        android:textColor="@color/colorPrimary"
+        android:clickable="true"
+        android:onClick="hehe"
+        android:width="100dp"
+        android:height="20dp"
+
+        />
 
 </android.support.constraint.ConstraintLayout>
