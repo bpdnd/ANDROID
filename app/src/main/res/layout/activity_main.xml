@@ -1,30 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/wjk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
     <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="按钮"
         android:textColor="@color/colorPrimary"
         android:clickable="true"
         android:onClick="hehe"
-        android:width="100dp"
-        android:height="20dp"
-
+        android:width="50dp"
+        android:height="50dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/shape"
         />
+    <!--用户输入框-->
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
 
-</android.support.constraint.ConstraintLayout>
+        android:textColor="@color/colorPrimary"
+        android:hint="请输入账户"
+        android:textColorHint="@color/colorAccent"
+        android:inputType="number"
+        android:maxLength="11"
+        android:gravity="left"
+        />
+</RelativeLayout>
